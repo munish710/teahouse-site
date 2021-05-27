@@ -12,7 +12,7 @@ Global Styles
   --clr-white: #ffff;
   --ff-primary: "Roboto", sans-serif;
   --ff-secondary: "Inter", sans-serif;
-  --transiton: all 3s linear;
+  --transiton: all 0.3s linear;
   --spacing: 0.25rem;
   --radius: 0.5rem;
 }
@@ -65,7 +65,7 @@ p {
   margin-bottom: 1.25rem;
 }
 
-@media screen and(min-widht:800px) {
+@media screen and(min-width:800px) {
   h1 {
     font-size: 4rem;
   }
@@ -193,4 +193,17 @@ p {
 
 .skill:hover .skill-icon {
   transform: translateY(-5px);
+}
+
+@media screen and (min-width: 576px) {
+  .skill {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .skill {
+    width: 25%;
+  }
 }
